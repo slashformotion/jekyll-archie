@@ -1,0 +1,39 @@
+---
+layout: page
+---
+<main>
+    <div class="title">
+        <h1 class="title">{{ page.title }}</h1>
+        
+        {% if page.excerp %}
+            <p class="excerp">{{ page.excerp }}</p>
+        {% endif %}
+            
+        <div class="meta"><time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%b %d %Y" }}</time></div>
+    </div>
+
+    {{ content }}
+
+    {% include post-tags.html %}
+
+    {% if site.enable-math and page.math==true %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        jax: ["input/TeX","input/MathML","output/SVG", "output/CommonHTML"],
+    extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js", "CHTML-preview.js"],
+    TeX: {
+      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+    },
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+          processEscapes: true,
+          processEnvironments: true
+        },
+        "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+  <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+{% endif %}
+</main>

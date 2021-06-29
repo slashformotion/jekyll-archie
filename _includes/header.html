@@ -1,0 +1,16 @@
+<header>
+    <div class="main">
+        <a href="{{"/" | absolute_url}}">{{site.title}}</a>
+    </div>
+    <nav>
+
+        <a class='{% if page.title == "Home" %}disabled{% endif %}' href="{{"/" | relative_url}}">Home</a>
+
+        <a class='{% if page.title == "Archives" %}disabled{% endif %}' href="{{"/archives.html" | relative_url}}">
+            Archives</a>
+
+        <a class='{% if page.title == "About" %}disabled{% endif %}' href="{{"/about.html" | relative_url}}">About</a>
+
+    </nav>
+</header>
+<hr class="header-hr">

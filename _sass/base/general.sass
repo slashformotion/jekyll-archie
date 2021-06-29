@@ -1,0 +1,145 @@
+*
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+html
+    color: #232333
+    font-family: 'Roboto Mono', monospace
+    font-size: 15px
+    line-height: 1.6em
+
+body
+    display: block
+    margin: 8px
+
+::selection
+    background: $maincolor
+    color: white
+
+p
+    font-family: 'Fira Sans', sans-serif
+    line-height: 1.5
+
+hr
+    // border: 0
+    border-top: 3px dotted $bordercl
+    margin: 1em 0
+
+blockquote
+    border-left: 3px solid $bordercl
+    color: #737373
+    margin: 0
+    padding-left: 1em
+
+a
+    border-bottom: 3px solid $maincolor
+    color: inherit
+    text-decoration: none
+    
+
+a:hover
+    background-color: $hovercolor
+    color: #fff
+
+ul
+    list-style: none
+    padding-left: 2ch
+
+ul li
+    text-indent: -2ch
+
+ul > li::before
+    content: '* '
+    font-weight: bold
+
+/* Images */
+img
+    border: 3px solid #ececec
+    max-width: 100%
+
+figure
+    box-sizing: border-box
+    display: inline-block
+    margin: 0
+    max-width: 100%
+
+figure img
+    max-height: 500px
+
+@media screen and (min-width: 600px)
+figure
+    padding: 0 40px
+
+figure h4
+    font-size: 1rem
+    margin: 0
+    margin-bottom: 1em
+
+figure h4::before
+    content: '↳ '
+
+figure.highlight
+    display: flex
+    justify-content: flex-start
+
+//  TITLES
+
+h1, h2, h3, h4, h5, h6
+    font-size: 1.2rem
+    margin-top: 2em
+
+h1::before  
+    content: '# '
+h2::before  
+    content: '## '
+h3::before  
+    content: '### '
+h4::before  
+    content: '#### '
+h5::before  
+    content: '##### '
+h6::before  
+    content: '###### '
+
+h1::before  
+h2::before,  
+h3::before,  
+h4::before,  
+h5::before,  
+h6::before,  
+    color: $maincolor 
+
+.title h1
+    margin-bottom: 0
+
+time
+    color: grey
+
+/* table */
+table
+    border-spacing: 0
+    border-collapse: collapse
+
+table th
+    padding: 6px 13px
+    border: 1px solid #dfe2e5
+    font-size: large
+
+table td
+    padding: 6px 13px
+    border: 1px solid #dfe2e5
+
+.tags li::before
+    content: "🏷 "
+
+// .tags a
+//     border-bottom: 3px solid $maincolor
+
+
+//     &:hover
+//         color: white
+//         background-color: $hovercolor
+
+
+.meta
+    color: #999
+    letter-spacing: -0.5px

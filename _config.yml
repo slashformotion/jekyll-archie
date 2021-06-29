@@ -1,0 +1,64 @@
+# YOU CAN CUSTOMIZE THE SECTION BELOW
+title: Jekyll Archie
+description: "A Jekyll theme based on the Hugo theme Archie."
+
+url: https://slashformotion.github.io
+baseurl: /jekyll-archie
+
+# social:
+#   facebook: myfacebook
+#   twitter: mytwitter
+#   # instagram: myinstagram
+#   # pinterest: mypinterest
+#   # linkedin: mylinkedin
+#   # youtube: myyoutube
+#   # spotify: myspotify
+#   github: mygithub
+#   # gitlab: mygitlab
+#   # lastfm: mylastfm
+#   # stackoverflow: 7044681/mystackoverflow
+#   # quora: userquora
+#   # reddit: username
+#   medium: medium
+#   # vimeo: myvimeo
+#   # lanyrd: mylanyrd
+#   email: myemail@gmail.com
+
+
+enable-math: true # site wide kill switch
+
+# END OF THE CUSTOMIZABLE SECTION
+############################################################
+############################################################
+pagination:
+  enabled: true
+  per_page: 5
+
+autopages:
+
+  # Site-wide kill switch, disable here and it doesn't run at all 
+  enabled: false
+
+jekyll-archives:
+  enabled: 
+    - tags
+    - categories
+  layout: archive
+  permalinks:
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-archives
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - LICENSE.txt
+  - CHANGELOG.md
+  - jekyll-archie.gemspec
+  - vendor
+  - node-modules
+  - stuff

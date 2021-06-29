@@ -1,0 +1,6 @@
+<li class="post">
+    <a href="{{ post.url | relative_url }}">
+        {{post.title | capitalize}}
+    </a> 
+    <span class="meta">{{ post.date | date:"%d-%m-%Y" }}</span>
+</li>

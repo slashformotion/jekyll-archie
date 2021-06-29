@@ -1,0 +1,9 @@
+{% if page.categories != empty or page.tags != empty %}
+<div class="post-tags">
+    <nav class="nav-post-tags-list">
+        <ul class="tags">
+            {% include categories_tags_links.html categories=page.categories tags=page.tags %}
+        </ul>
+    </nav>
+</div>
+{% endif %}

@@ -1,0 +1,7 @@
+<section class="list-item">
+    <h1 class="title"><a href="{{ post.url | relative_url }}">{{post.title | capitalize}}</a></h1>
+    <time>{{ post.date | date:"%d-%m-%Y" }}</time>
+    <br>
+    <div class="description">{{ post.excerp }}</div>
+    <a href="{{ post.url | relative_url }}">Read more ⟶</a>
+</section>

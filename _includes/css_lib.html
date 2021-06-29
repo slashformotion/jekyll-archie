@@ -1,0 +1,55 @@
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<link rel="stylesheet" href="{{ "/assets/dist/css/style.css" | relative_url}}">
+
+<!-- 
+{% comment %} Here we capture the theme {% endcomment %}
+{%- capture light_theme -%}
+    {% if site.light-theme  %}
+    {{site.light-theme}}
+    {% else if %}
+    white
+    {% endif %}
+{%- endcapture -%}
+
+{%- capture dark_theme -%}
+    {% if site.dark-theme  %}
+    {{site.dark-theme}}
+    {% else if %}
+    big-stone
+    {% endif %}
+{%- endcapture -%}
+
+{%- capture light_css_path -%}/assets/dist/awsm.css/awsm_theme_{{light_theme | strip}}.min.css{%- endcapture -%}
+{%- capture dark_css_path -%}/assets/dist/awsm.css/awsm_theme_{{dark_theme | strip}}.min.css{%- endcapture -%}
+
+
+{% comment %} Dark Syntax {% endcomment %}
+{%- assign syntax_dark = "base16.dark" -%}
+{% if site.dark-theme == "black" %}
+    {% assign syntax_dark = "base16.monokai.dark" %}
+{% endif %}
+{% if site.dark-theme == "big-stone" %}
+    {% assign syntax_dark = "thankful_eyes" %}
+{% endif %}
+{% if site.dark-theme == "gondola" %}
+    {% assign syntax_dark = "gruvbox.dark" %}
+{% endif %}
+
+{% comment %} Light Syntax {% endcomment %}
+{%- assign syntax_light = "github" -%}
+
+{%- capture light_syntax_css_path -%}/assets/dist/rouge/syntax-{{syntax_light}}.css{%- endcapture -%}
+{%- capture dark_syntax_css_path -%}/assets/dist/rouge/syntax-{{syntax_dark}}.css{%- endcapture -%}
+
+
+{% comment %} Dark Theme  {% endcomment %}
+<link rel="stylesheet" href="{{ dark_css_path | relative_url }}" media="(prefers-color-scheme: dark)">
+{% comment %} Light Theme  {% endcomment %}
+<link rel="stylesheet" href="{{ light_css_path | relative_url }}" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+
+{% comment %} Dark Theme  {% endcomment %}
+<link rel="stylesheet" href="{{ dark_syntax_css_path | relative_url }}" media="(prefers-color-scheme: dark)">
+{% comment %} Light Theme  {% endcomment %}
+<link rel="stylesheet" href="{{ light_syntax_css_path | relative_url }}" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)"> -->
