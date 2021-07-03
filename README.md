@@ -33,7 +33,6 @@ I will release a template repository to use with this theme
 
 
 
-
 ## Development
 
 To set up your environment to develop this theme, run `bundle install`.
@@ -42,7 +41,7 @@ To test your theme, run `bundle exec jekyll serve --config _config.yml,_config_d
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at [https://github.com/slashformotion/jekyll-archie](https://github.com/slashformotion/jekyll-archie). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
