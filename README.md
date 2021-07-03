@@ -1,7 +1,7 @@
 # jekyll-archie
 
 
-> WARNING: this project is in version 0.0.1, It's not stable yet. It's a starting point for now
+> WARNING: this project is in version 0.2.0, It's not stable yet. It's a starting point for now. Feel free to fork it to help the project
 
 A Jekyll theme based on the Hugo theme Archie by @athul.
 
@@ -29,7 +29,9 @@ Or install it yourself as:
 
 ## Usage
 
-I will release a template repository to use with this theme 
+I will release a template repository to use with this theme.
+
+Meanwhile you can use the `_BLANK_config.yml` as a starting point for your config.
 
 
 

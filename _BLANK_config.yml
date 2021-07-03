@@ -1,0 +1,57 @@
+# YOU CAN CUSTOMIZE THE SECTION BELOW
+# The title of your website
+title: Jekyll Archie  
+
+# The description of your website
+description: "A Jekyll theme based on the Hugo theme Archie."
+
+# Your name
+author: slashformotion
+
+# The domain of your website and the location (baseurl) of your jekyll site
+url: https://slashformotion.github.io
+baseurl: /jekyll-archie
+
+# site wide kill switch for MathJaX
+enable-math: true 
+
+# END OF THE CUSTOMIZABLE SECTION
+############################################################
+############################################################
+pagination:
+  # Site-wide kill switch, disable here and it doesn't run at all 
+  enabled: true
+  per_page: 5
+
+autopages:
+  # Site-wide kill switch, disable here and it doesn't run at all 
+  enabled: false
+
+jekyll-archives:
+  enabled: 
+    - tags
+    - categories
+  layout: archive
+  permalinks:
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+feed:
+  path: atom.xml
+
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-archives
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - LICENSE.txt
+  - CHANGELOG.md
+  - jekyll-archie.gemspec
+  - vendor
+  - node-modules
+  - stuff
