@@ -1,7 +1,7 @@
 # YOU CAN CUSTOMIZE THE SECTION BELOW
 title: Jekyll Archie
 description: "A Jekyll theme based on the Hugo theme Archie."
-
+author: slashformotion
 url: https://slashformotion.github.io
 baseurl: /jekyll-archie
 
@@ -31,11 +31,11 @@ enable-math: true # site wide kill switch
 ############################################################
 ############################################################
 pagination:
+  # Site-wide kill switch, disable here and it doesn't run at all 
   enabled: true
   per_page: 5
 
 autopages:
-
   # Site-wide kill switch, disable here and it doesn't run at all 
   enabled: false
 
@@ -48,9 +48,13 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/category/:name/'
 
+feed:
+  path: atom.xml
+
 plugins:
   - jekyll-paginate-v2
   - jekyll-archives
+  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
