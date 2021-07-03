@@ -55,6 +55,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-archives
   - jekyll-feed
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
