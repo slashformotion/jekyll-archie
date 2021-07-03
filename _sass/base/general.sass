@@ -21,8 +21,9 @@ p
 
 hr
     // border: 0
-    border-top: 3px dotted $bordercl
+    border-top: 1px dotted $bordercl
     margin: 1em 0
+    
 
 blockquote
     border-left: 3px solid $bordercl
@@ -84,8 +85,17 @@ figure.highlight
 //  TITLES
 
 h1, h2, h3, h4, h5, h6
-    font-size: 1.2rem
+    font-size: 1.5rem
     margin-top: 2em
+
+h2
+    font-size: 1.2rem
+    
+h3, h4, h5, h6
+    font-size:  1.05rem
+
+h6
+    color: #525252
 
 h1::before  
     content: '# '
@@ -106,7 +116,7 @@ h3::before,
 h4::before,  
 h5::before,  
 h6::before,  
-    color: $maincolor 
+    color: darken($maincolor,5% ) 
 
 .title h1
     margin-bottom: 0
@@ -143,3 +153,16 @@ table td
 .meta
     color: #999
     letter-spacing: -0.5px
+
+
+.light-hr
+    // border: 3px
+    $light-hr-color: #00000065
+    border-top-width: 3px 
+    border-top-color: $light-hr-color
+    border-top-style: none
+    margin: 1em 0
+
+    &.no-margin
+        margin: 0.1rem
+        border-top-color: #111 // transparentize($light-hr-color, 0)  
