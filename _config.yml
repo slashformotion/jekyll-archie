@@ -67,3 +67,4 @@ exclude:
   - vendor
   - node-modules
   - stuff
+  - Makefile

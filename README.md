@@ -3,6 +3,8 @@
 
 > WARNING: this project is in version 0.2.0, It's not stable yet. It's a starting point for now. Feel free to fork it to help the project
 
+![](https://github.com/slashformotion/jekyll-archie/blob/master/screenshot.png)
+
 A Jekyll theme based on the Hugo theme Archie by @athul.
 
 ## Installation
