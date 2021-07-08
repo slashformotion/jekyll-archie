@@ -3,7 +3,7 @@
 
 > WARNING: this project is in version 0.2.0, It's not stable yet. It's a starting point for now. Feel free to fork it to help the project
 
-![](https://github.com/slashformotion/jekyll-archie/blob/master/screenshot.png)
+![](https://raw.githubusercontent.com/slashformotion/jekyll-archie/master/screenshot.png)
 
 A Jekyll theme based on the Hugo theme Archie by @athul.
 
@@ -31,9 +31,7 @@ Or install it yourself as:
 
 ## Usage
 
-I will release a template repository to use with this theme.
-
-Meanwhile you can use the `_BLANK_config.yml` as a starting point for your config.
+Use this [template](https://github.com/slashformotion/archie-template) to start with the right amout boilerplate code and github pages set-up.  
 
 
 
