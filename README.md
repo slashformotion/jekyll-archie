@@ -1,7 +1,12 @@
+
+
+***Well I discovered Hugo; the faster static site generator in the galaxy. I will never use jekyll again. This is the end of this project...***
+
+
+
+
+
 # jekyll-archie
-
-
-> WARNING: this project is in version 0.2.0, It's not stable yet. It's a starting point for now. Feel free to fork it to help the project
 
 ![](https://raw.githubusercontent.com/slashformotion/jekyll-archie/master/screenshot.png)
 
